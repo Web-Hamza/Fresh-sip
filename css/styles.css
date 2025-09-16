@@ -1,0 +1,235 @@
+/* ===========================
+   RESET & BASE
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 100px;
+}
+
+body.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 0;
+  height: 100px;
+}
+
+.header-logo {
+  height: 160px;
+  width: auto;
+}
+
+/* ===========================
+   MAIN
+   =========================== */
+main {
+  padding: 20px;
+}
+
+.carousel-inner #img-slider {
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+/* ===========================
+   IMAGE SECTIONS (Juices)
+   =========================== */
+.img-sec .row {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  width: 60%;
+  height: 300px;
+}
+
+.card-left-align {
+  margin-right: auto;
+  margin-left: 85px;
+}
+
+.card-right-align {
+  margin-left: auto;
+  margin-right: 85px;
+}
+
+.img-sec .row img {
+  height: 260px;
+  width: 300px;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+.carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border: none;
+}
+
+/* ===========================
+   ORDER MESSAGE
+   =========================== */
+#orderMessage {
+  z-index: 2000;
+}
+
+/* ===========================
+   CONTACT FORM
+   =========================== */
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+.left-container {
+  background-color: #050505;
+  color: white;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-container h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.left-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.right-container {
+  flex: 1;
+  padding: 40px;
+}
+
+.right-container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.social-container {
+  margin-bottom: 20px;
+}
+
+.social-container a {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  resize: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #fafafa;
+  outline: none;
+  box-shadow: 0 0 8px rgba(35, 36, 37, 0.25);
+}
+
+button[type="submit"] {
+  background-color: #000000;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  font-weight: 700;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: 600;
+  min-height: 24px;
+}
+
+/* ===========================
+   BENEFIT SECTION
+   =========================== */
+.benefit-card img {
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.benefit-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
