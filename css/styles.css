@@ -7,6 +7,18 @@
   box-sizing: border-box;
 }
 
+/* Default main content */
+.main-content {
+  transition: margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+/* Jab navbar toggle open ho */
+.navbar-collapse.show + .main-content {
+  margin-top: 140px; /* ya aapke navbar ki height */
+}
+
+
 html {
   scroll-behavior: smooth;
 }
